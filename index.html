@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASAD TEXTILES.NG - Premium Textile Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom CSS */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .team-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease;
+        }
+        
+        .active {
+            color: #3b82f6;
+            font-weight: bold;
+        }
+        
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="h-10 w-auto" src="images/logo.jpg" alt="ASAD TEXTILES.NG Logo">
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-500 px-3 py-2 text-sm font-medium active">Home</a>
+                    <a href="#products" class="text-gray-700 hover:text-blue-500 px-3 py-2 text-sm font-medium">Products</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-500 px-3 py-2 text-sm font-medium">About Us</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">Contact Us</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-500 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-50">Home</a>
+                <a href="#products" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-50">Products</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-50">About Us</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-600 hover:bg-blue-700">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <section id="home" class="hero flex items-center justify-center text-center text-white">
+            <div class="container mx-auto px-4 animate-fade-in">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Premium Textile Solutions</h1>
+                <p class="text-xl md:text-2xl mb-8">Quality fabrics for fashion, home, and industry</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#products" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition duration-300">Our Products</a>
+                    <a href="#contact" class="bg-white hover:bg-gray-100 text-blue-600 px-6 py-3 rounded-md font-medium transition duration-300">Get a Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Why Choose ASAD TEXTILES?</h2>
+                    <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">We provide the finest quality textiles with exceptional service</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm text-center">
+                        <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white mb-4">
+                            <i class="fas fa-award text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-medium text-gray-900 mb-2">Premium Quality</h3>
+                        <p class="text-gray-600">Our fabrics undergo rigorous quality checks to ensure durability and comfort.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm text-center">
+                        <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white mb-4">
+                            <i class="fas fa-truck text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-medium text-gray-900 mb-2">Nationwide Delivery</h3>
+                        <p class="text-gray-600">We deliver to all major cities across Nigeria with reliable logistics partners.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm text-center">
+                        <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white mb-4">
+                            <i class="fas fa-hand-holding-usd text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-medium text-gray-900 mb-2">Competitive Pricing</h3>
+                        <p class="text-gray-600">Get the best value for your money with our competitive wholesale prices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Page -->
+        <section id="products" class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Product Range</h2>
+                    <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">Explore our wide selection of premium textiles</p>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product 1 -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img class="w-full h-64 object-cover" src="images/MenLace.jpg" alt="African Print Fabric">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Men Lace</h3>
+                            <p class="text-gray-600 mb-4">Vibrant traditional prints perfect for dresses, shirts,mostly kaftaan.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">₦500,000/10yrd</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition duration-300">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img class="w-full h-64 object-cover" src="images/Coaster.jpg" alt="Cotton Linen">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Pima Cotton</h3>
+                            <p class="text-gray-600 mb-4">Silk Material, The Fabric is Suitable for summer weather.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">₦20,000/yrd</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition duration-300">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img class="w-full h-64 object-cover" src="images/silver shiny.jpg" alt="Silk Fabric">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Silver Shiny Wool</h3>
+                            <p class="text-gray-600 mb-4">High-end silk perfect for elegant evening wear and special occasions.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">₦10,000/yrd</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition duration-300">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img class="w-full h-64 object-cover" src="images/Brocade.jpg" alt="Denim Fabric">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Cotton Brocade</h3>
+                            <p class="text-gray-600 mb-4">A well known Finest Cotton For Occasions .</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">₦8,000/mtr</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition duration-300">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 5 -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img class="w-full h-64 object-cover" src="images/Geovaney.jpg" alt="Chiffon Fabric">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Giovanni Cotton</h3>
+                            <p class="text-gray-600 mb-4">Lightweight and flowy cotton for elegant dresses and scarves.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">₦7,000/yrd</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition duration-300">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 6 -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img class="w-full h-64 object-cover" src="images/hilton.jpg" alt="Upholstery Fabric">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Hilton Fabric</h3>
+                            <p class="text-gray-600 mb-4">Durable and Evalasting fabrics.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">₦15,000/yrd</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition duration-300">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <button id="load-more" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition duration-300">Load More Products</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Page -->
+        <section id="about" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">About ASAD TEXTILES.NG</h2>
+                    <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">Your trusted partner in quality textiles since 2020</p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Story</h3>
+                        <p class="text-gray-600 mb-4">Founded in 2020, ASAD TEXTILES.NG began as a small fabric store in Lagos with a vision to provide high-quality textiles to fashion designers, tailors, and home decorators across Nigeria.</p>
+                        <p class="text-gray-600 mb-4">Over the years, we've grown into one of Nigeria's leading textile distributors, known for our exceptional quality, competitive pricing, and outstanding customer service.</p>
+                        <p class="text-gray-600 mb-6">Today, we supply fabrics to over 500 businesses across Nigeria and continue to expand our product range to meet the evolving needs of our customers.</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="text-lg font-semibold text-blue-600 mb-2">300+</h4>
+                                <p class="text-gray-600">Business Clients</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="text-lg font-semibold text-blue-600 mb-2">100+</h4>
+                                <p class="text-gray-600">Fabric Varieties</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="text-lg font-semibold text-blue-600 mb-2">5+</h4>
+                                <p class="text-gray-600">Years Experience</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="text-lg font-semibold text-blue-600 mb-2">24/7</h4>
+                                <p class="text-gray-600">Customer Support</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img class="w-full rounded-lg shadow-lg" src="images/logo.jpg" alt="Our Textile Store">
+                    </div>
+                </div>
+                
+                <!-- Management Team -->
+                <div class="mt-16">
+                    <h3 class="text-2xl font-bold text-center text-gray-900 mb-8">Our Management Team</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Team Member 1 -->
+                        <div class="team-card bg-gray-50 p-6 rounded-lg shadow-sm text-center transition duration-300">
+                            <img class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Asad Saidu Abdullahi">
+                            <h4 class="text-xl font-semibold text-gray-900 mb-1">Asad Saidu Abdullahi</h4>
+                            <p class="text-blue-600 font-medium mb-2">Founder & CEO</p>
+                            <p class="text-gray-600">With over 5+ years in the textile industry, Alhaji Asad leads our company with vision and expertise.</p>
+                            <div class="flex justify-center space-x-3 mt-4">
+                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        
+                        <!-- Team Member 2 -->
+                        <div class="team-card bg-gray-50 p-6 rounded-lg shadow-sm text-center transition duration-300">
+                            <img class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWd" alt="Bashir Abdulhamid">
+                            <h4 class="text-xl font-semibold text-gray-900 mb-1">Bashir Abdulhamid</h4>
+                            <p class="text-blue-600 font-medium mb-2">Operations Manager</p>
+                            <p class="text-gray-600">Bashir ensures our operations run smoothly and our customers receive the best service possible.</p>
+                            <div class="flex justify-center space-x-3 mt-4">
+                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        
+                        <!-- Team Member 3 -->
+                        <div class="team-card bg-gray-50 p-6 rounded-lg shadow-sm text-center transition duration-300">
+                            <img class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" src="images/muhseen.jpg" alt="Muhseen Asad">
+                            <h4 class="text-xl font-semibold text-gray-900 mb-1">Muhseen Asad</h4>
+                            <p class="text-blue-600 font-medium mb-2">Sales Director</p>
+                            <p class="text-gray-600">Museen leads our sales team with extensive knowledge of fabrics and customer needs.</p>
+                            <div class="flex justify-center space-x-3 mt-4">
+                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Contact Us</h2>
+                    <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">Get in touch with our team for inquiries and orders</p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                <input type="text" id="name" name="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                <input type="email" id="email" name="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                                <select id="subject" name="subject" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                                    <option>General Inquiry</option>
+                                    <option>Product Inquiry</option>
+                                    <option>Bulk Order</option>
+                                    <option>Partnership</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                <textarea id="message" name="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
+                            </div>
+                            
+                            <div>
+                                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-md font-medium transition duration-300">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-4">Contact Information</h3>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 h-6 w-6 text-blue-600">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="ml-3 text-base text-gray-600">
+                                        <p>001 Kantin Kwari, Market</p>
+                                        <p>Kano, State</p>
+                                        <p>Nigeria</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 h-6 w-6 text-blue-600">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="ml-3 text-base text-gray-600">
+                                        <p>+234 810 506 6603</p>
+                                        <p>+234 814 216 6460</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 h-6 w-6 text-blue-600">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="ml-3 text-base text-gray-600">
+                                        <p>info:asadjunior19@gmail.com</p>
+                                        <p>sales:asadtextiles002@gmail.com</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 h-6 w-6 text-blue-600">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="ml-3 text-base text-gray-600">
+                                        <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                                        <p>Saturday: 9:00 AM - 4:00 PM</p>
+                                        <p>Sunday: Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6">
+                                <h4 class="text-lg font-medium text-gray-900 mb-2">Follow Us</h4>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-facebook-f text-xl"></i></a>
+                                    <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-twitter text-xl"></i></a>
+                                    <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-instagram text-xl"></i></a>
+                                    <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin-in text-xl"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Map -->
+                        <div class="mt-6 bg-white p-4 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-4">Our Location</h3>
+                            <div class="aspect-w-16 aspect-h-9">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.585028943576!2d3.379857314770618!3d6.453979895334317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae6788c3d%3A0x9df5e6e7a2e6e7a2!2sBroad%20Street%2C%20Lagos%20Island%2C%20Lagos!5e0!3m2!1sen!2sng!4v1620000000000!5m2!1sen!2sng" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">ASAD TEXTILES.NG</h3>
+                    <p class="text-gray-400">Your trusted partner for premium quality textiles in Nigeria.</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-white">Products</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">African Prints</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Cotton Fabrics</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Silk & Chiffon</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Upholstery Fabrics</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for updates and special offers.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-md w-full focus:outline-none text-gray-900">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-md"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2020 ASAD TEXTILES.NG. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Active Navigation Link Highlighting
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Load More Products
+        const loadMoreButton = document.getElementById('load-more');
+        const productsContainer = document.querySelector('#products .grid');
+        
+        loadMoreButton.addEventListener('click', () => {
+            // Simulate loading more products
+            const loadingText = document.createElement('p');
+            loadingText.textContent = 'Loading more products...';
+            loadingText.className = 'text-center col-span-full py-4';
+            productsContainer.appendChild(loadingText);
+            
+            setTimeout(() => {
+                productsContainer.removeChild(loadingText);
+                
+                // Add more product cards (in a real app, these would come from an API)
+                const newProducts = [
+                    {
+                        name: "Velvet Fabric",
+                        description: "Luxurious velvet perfect for evening wear and home decor.",
+                        price: "₦8,500/m",
+                        image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=736&q=80"
+                    },
+                    {
+                        name: "Lace Fabric",
+                        description: "Elegant lace for bridal wear and special occasion outfits.",
+                        price: "₦9,200/m",
+                        image: "https://images.unsplash.com/photo-1520367445093-50dc08a59d9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                    }
+                ];
+                
+                newProducts.forEach(product => {
+                    const productCard = document.createElement('div');
+                    productCard.className = 'product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300';
+                    productCard.innerHTML = `
+                        <img class="w-full h-64 object-cover" src="${product.image}" alt="${product.name}">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">${product.name}</h3>
+                            <p class="text-gray-600 mb-4">${product.description}</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">${product.price}</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition duration-300">Add to Cart</button>
+                            </div>
+                        </div>
+                    `;
+                    
+                    productsContainer.appendChild(productCard);
+                });
+                
+                // Disable button if we've loaded all products (simulated)
+                loadMoreButton.disabled = true;
+                loadMoreButton.textContent = 'All Products Loaded';
+                loadMoreButton.className = 'bg-gray-400 text-white px-6 py-3 rounded-md font-medium cursor-not-allowed';
+            }, 1500);
+        });
+        
+        // Form Submission
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Get form values
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                
+                // Show success message
+                alert(`Thank you, ${name}! Your message has been sent. We'll contact you at ${email} soon.`);
+                
+                // Reset form
+                contactForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>
